@@ -1,0 +1,185 @@
+<style>
+  .panda {
+
+    --panda-skin: white;
+    --panda-body: black;
+
+    position: relative;
+    margin: auto;
+    display: block;
+    margin-top: 5%;
+    width: 300px;
+    height: 300px;
+  }
+
+  .panda-top{
+    top:20%;
+    left: 20%;
+    background-color:var(--panda-skin, white);
+    width: 50%;
+    height: 45%;
+    border-radius: 70% 70% 60% 60%;
+
+  }
+  .panda-bottom {
+    top:50%;
+    left:20%;
+    background-color: var(--panda-skin, white);
+    width: 50%;
+    height: 54%;
+    border-radius:70% 70% 60% 60% ;
+  }
+  .right-hand{
+    left: -30%;
+    top:10%;
+    width: 50%;
+    background-color: var(--panda-body, black);
+    height: 30%;
+    border-radius: 70% 70% 60% 60%;
+    transform: rotate(-20deg);
+  }
+  .left-hand{
+    left: 80%;
+    width: 50%;
+    background-color: var(--panda-body, black);
+    height: 30%;
+    border-radius: 70% 70% 60% 60%;
+    transform: rotate(20deg);
+  }
+  .left-eye{
+    background-color: var(--panda-body, black);
+    top:35%;
+    left:20%;
+    width:15%;
+    height: 25%;
+    border-radius: 50%;
+    border-style:solid;
+    transform: rotate(20deg);
+
+
+  }
+   .right-eye{
+    background-color: var(--panda-body, black);
+    top:35%;
+    left:60%;
+    width:15%;
+    height: 25%;
+    border-radius: 50%;
+    border-style: solid;
+    transform: rotate(-20deg);
+
+  }
+  .left-cheek{
+    top:70%;
+    left:10%;
+    width: 20%;
+    height: 13%;
+    background-color: pink;
+    border-radius: 50%;
+
+  }
+  .right-cheek{
+    top:70%;
+    left:70%;
+    width: 20%;
+    height: 13%;
+    background-color: pink;
+    border-radius: 50%;
+
+  }
+  .right-feet{
+    top: 75%;
+    width: 35%;
+    height: 50%;
+    background-color: var(--panda-body, black);
+    border-radius: 50%;
+    transform: rotate(20deg);
+  }
+  .left-feet{
+    top: 75%;
+    left:60%;
+    width: 35%;
+    height: 50%;
+    background-color: var(--panda-body, black);
+    border-radius: 50%;
+    transform: rotate(-20deg);
+
+  }
+  .sparkle{
+    top:45%;
+    left:60%;
+    width:15%;
+    height: 15%;
+    background-color: var(--panda-skin, white);
+    border-radius: 50%;
+  }
+  .beak-top{
+    top:60%;
+    left: 42.5%;
+    background-color: var(--panda-body, black);
+    height: 10%;
+    width:12%;
+    border-radius: 100%;
+  }
+  .beak-bottom{
+    top:70.5%;
+    left: 41%;
+    background-color: rgb(230,0,0);
+    height: 10%;
+    width:16%;
+    border-radius: 100%;
+
+  }
+
+  .right-ear{
+    top:-15%;
+    left:3%;
+    height: 35%;
+    width: 25%;
+    background-color: var(--panda-body, black);
+    border-radius: 60%;
+    transform: rotate(-50deg);
+  }
+  .left-ear{
+    top:-15%;
+    left:65%;
+    height: 35%;
+    width: 25%;
+    background-color: var(--panda-body, black);
+    border-radius: 60%;
+    transform: rotate(50deg);
+  }
+
+  body {
+    background:brown;
+  }
+
+  .panda * {
+    position: absolute;
+  }
+</style>
+<div class="panda">
+  <div class="panda-bottom">
+    <div class="right-hand"></div>-->
+    <div class="left-hand"></div>
+    <div class="right-feet"></div>
+    <div class="left-feet"></div>
+  </div>
+  <div class="panda-top">
+    <div class="left-ear"></div>
+    <div class="right-ear"></div>
+    <div class="right-cheek"></div>
+    <div class="left-cheek"></div>
+    <div class="belly"></div>
+    <div class="right-eye">
+      <div class="sparkle"></div>
+    </div>
+    <div class="left-eye">
+      <div class="sparkle"></div>
+    </div>
+    <div class="blush-right"></div>
+    <div class="blush-left"></div>
+    <div class="beak-top"></div>
+    <div class="beak-bottom"></div>
+  </div>
+</div>
